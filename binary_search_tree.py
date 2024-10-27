@@ -55,3 +55,12 @@ class BST:
             return self._search(node.left, key)
         else:
             return self._search(node.right, key)
+
+# Testing
+bst = BST()
+bst.insert(10)
+bst.insert(20)
+bst.insert(5)
+assert bst.search(10) is not None
+assert bst.search(15) is None
+bst.delete(10)
